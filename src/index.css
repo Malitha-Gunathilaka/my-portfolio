@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+/* navbar.css */
+.hamburger {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  display: block;
+  background: #ffffff;
+  height: 2px;
+  margin: 6px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger.open .line:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.open .line:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open .line:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+/* ///////////////////////////////////////////////////// */
+
+
+/* ./Hero.css */
+.typewriter {
+  overflow: hidden;
+  border-right: 3px solid #FF4B4B;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  animation: 
+      typing-deleting 10s steps(100, end) infinite,
+      blink-caret 0.75s step-end infinite;
+  width: 0;
+}
+
+@keyframes typing-deleting {
+  0% { 
+    width: 0;
+  }
+  25% { 
+    width: 100%;
+  }
+  50% { 
+    width: 100%;
+  }
+  75% { 
+    width: 0;
+  }
+  100% { 
+    width: 0;
+  }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #FF4B4B }
+}
+/* //////////////////////////////////// */
