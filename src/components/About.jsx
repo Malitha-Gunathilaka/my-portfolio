@@ -21,7 +21,8 @@ export default function About() {
 
           {/* Content Column */}
           <div className="space-y-6">
-            <h2 className="text-4xl font-bold text-red-500 mb-8">About Me</h2>
+            <h2 className="text-4xl font-bold text-red-500 mb-8 ">About Me</h2>
+            <h3 className="text-4xl font-bold text-white mb-8">Hello</h3>
             <p className="text-gray-300 text-lg leading-relaxed">
               I am a final-year BSc Physical Science ICT undergraduate at the University 
               of Kelaniya with a passion for software development, web/mobile applications, 
