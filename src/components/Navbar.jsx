@@ -33,7 +33,7 @@ export default function Navbar() {
           {/* Desktop Menu */}
           <div className="hidden md:flex">
             <ul className="flex space-x-8">
-              {['About', 'Projects', 'Contact'].map((item) => (
+              {['About','Skills','Projects', 'Contact'].map((item) => (
                 <motion.li
                   key={item}
                   whileHover={{ scale: 1.1 }}
@@ -74,7 +74,7 @@ export default function Navbar() {
           } md:hidden`}
         >
           <div className="px-2 pt-2 pb-3 space-y-1">
-            {['About', 'Projects', 'Contact'].map((item) => (
+            {['About','Skills','Projects', 'Contact'].map((item) => (
               <a
                 key={item}
                 href={`#${item.toLowerCase()}`}
