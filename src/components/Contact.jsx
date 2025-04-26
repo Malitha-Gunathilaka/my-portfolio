@@ -45,7 +45,7 @@ export default function Contact() {
   return (
     <section id="contact" className="py-24 px-4 bg-black">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
+        <div className="text-center mb-8">
           <h2 className="text-5xl font-bold bg-gradient-to-r from-red-500 to-red-700 bg-clip-text text-transparent">
             Let's Connect
           </h2>
