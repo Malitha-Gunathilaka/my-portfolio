@@ -86,9 +86,11 @@ export default function Hero() {
 
       <div className="relative z-10 min-h-screen flex items-center px-4 py-16 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center w-full">
+          
           {/* Image Container - Top on Mobile */}
           <div className="order-1 md:order-2 md:col-span-2 flex justify-center mb-8 md:mb-0">
             <div className="relative">
+              
               <div className="relative w-48 h-48 md:w-150 md:h-150 overflow-hidden transform hover:scale-110 transition-all duration-500 hover:rotate-5">
                 <img
                   src={profileImg}
