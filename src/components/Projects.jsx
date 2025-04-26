@@ -5,7 +5,7 @@ export default function Projects() {
       description: "Built a React Native app to control an autonomous shuttlecock-collecting robot in real-time, using ESP8266 and IoT integration.",
       techStack: ["React Native", "IoT", "ESP8266", "Firebase"],
       github: "https://github.com/Malitha-Gunathilaka/ShuttleRover-Project",
-      live: "https://shuttle-rover-demo.com",
+      live: "https://drive.google.com/drive/folders/1GVD45_iQCrnCPOktwWPR52k6B5bue-G4?usp=sharing",
       image: "/project/shuttle1.jpg"
     },
     {

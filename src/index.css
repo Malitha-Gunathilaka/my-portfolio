@@ -66,3 +66,38 @@
   50% { border-color: #FF4B4B }
 }
 /* //////////////////////////////////// */
+
+
+/* Add this to your existing CSS */
+.animate-hello {
+  display: inline-block;
+  animation: fadeSlideIn 1.5s ease forwards;
+  opacity: 0;
+}
+
+.animate-hello span {
+  display: inline-block;
+  animation: letterWave 2s ease infinite;
+}
+
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes letterWave {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+    color: #000000; /* red-500 color */
+  }
+}
+/* //////////////////////////////////// */

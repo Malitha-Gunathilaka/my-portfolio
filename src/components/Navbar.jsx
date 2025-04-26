@@ -13,6 +13,13 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
   return (
     <motion.nav
       initial={{ y: -100 }}
@@ -25,7 +32,8 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-16">
           <motion.h1 
             whileHover={{ scale: 1.1 }}
-            className="text-2xl font-bold text-white"
+            className="text-2xl font-bold text-white cursor-pointer"
+            onClick={scrollToTop}
           >
             Malitha
           </motion.h1>

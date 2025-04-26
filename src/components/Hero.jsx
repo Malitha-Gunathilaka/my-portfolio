@@ -56,27 +56,27 @@ export default function Hero() {
     {
       name: "GitHub",
       icon: <FaGithub size={35} />,
-      url: "https://github.com/yourusername",
+      url: "https://github.com/Malitha-Gunathilaka",
     },
     {
       name: "LinkedIn",
       icon: <FaLinkedin size={35} />,
-      url: "https://linkedin.com/in/yourusername",
+      url: "https://www.linkedin.com/in/malithagunathilaka",
     },
     {
       name: "Twitter",
       icon: <FaTwitter size={35} />,
-      url: "https://twitter.com/yourusername",
+      url: "https://twitter.com/malithagunathilaka",
     },
     {
       name: "Instagram",
       icon: <FaInstagram size={35} />,
-      url: "https://instagram.com/yourusername",
+      url: "https://instagram.com/malithagunathilaka",
     },
   ];
 
   return (
-    <section className="relative h-screen w-full bg-black overflow-hidden">
+    <section className="relative min-h-screen w-full bg-black overflow-hidden">
       <Particles
         id="tsparticles"
         init={particlesInit}
@@ -84,17 +84,28 @@ export default function Hero() {
         className="absolute inset-0"
       />
 
-<div className="relative z-10 h-full flex items-center px-4 max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-10 items-center">
+      <div className="relative z-10 min-h-screen flex items-center px-4 py-16 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center w-full">
+          {/* Image Container - Top on Mobile */}
+          <div className="order-1 md:order-2 md:col-span-2 flex justify-center mb-8 md:mb-0">
+            <div className="relative">
+              <div className="relative w-48 h-48 md:w-150 md:h-150 overflow-hidden transform hover:scale-110 transition-all duration-500 hover:rotate-5">
+                <img
+                  src={profileImg}
+                  alt="Malitha Gunathilaka"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
 
-          {/* Text Content - Left Side */}
+          {/* Text Content */}
           <div className="order-2 md:order-1 md:col-span-10 text-center md:text-left flex flex-col">
-            {/* Main Content Section */}
-            <div className="mb-12 mt-40">
-              <h1 className="text-5xl md:text-6xl font-bold mb-4 bg-clip-text text-transparent bg-white">
+            <div className="space-y-6">
+              <h1 className="text-4xl md:text-6xl font-bold bg-clip-text text-transparent bg-white">
                 Hi, I'm
               </h1>
-              <h1 className="text-5xl md:text-7xl font-bold mb-3 bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-orange-500">
+              <h1 className="text-4xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-orange-500">
                 Malitha Gunathilaka
               </h1>
 
@@ -106,22 +117,20 @@ export default function Hero() {
               <div className="flex flex-wrap gap-4 justify-center md:justify-start">
                 <a
                   href="#projects"
-                  className="px-8 py-3 border-2 border-red-500 text-white rounded-full hover:bg-red-600 transition-all duration-300 transform hover:scale-105"
+                  className="px-6 py-2.5 md:px-8 md:py-3 border-2 border-red-500 text-white rounded-full hover:bg-red-600 transition-all duration-300 transform hover:scale-105"
                 >
                   View My Work
                 </a>
                 <a
                   href="#contact"
-                  className="px-8 py-3 border-2 border-red-500 text-red-100 rounded-full hover:bg-red-500 hover:text-white transition-all duration-300 transform hover:scale-105"
+                  className="px-6 py-2.5 md:px-8 md:py-3 border-2 border-red-500 text-red-100 rounded-full hover:bg-red-500 hover:text-white transition-all duration-300 transform hover:scale-105"
                 >
                   Contact Me
                 </a>
               </div>
-            </div>
 
-            {/* Social Media Icons Section - Separated with Border */}
-            
-              <div className="flex items-center justify-center md:justify-start gap-10 mt-15">
+              {/* Social Media Icons */}
+              <div className="flex items-center justify-center md:justify-start gap-6 mt-8 pt-8 border-t border-gray-800">
                 {socialLinks.map((social) => (
                   <a
                     key={social.name}
@@ -134,19 +143,6 @@ export default function Hero() {
                     {social.icon}
                   </a>
                 ))}
-              </div>
-          </div>
-
-          {/* Image Container - Right Side (4 columns) */}
-          <div className="order-1 md:order-2 md:col-span-2 flex justify-end md:justify-center ">
-            <div className="relative mt-30 mr-30">
-              {/* Image Frame */}
-              <div className="relative w-64 h-64 md:w-145 md:h-160  overflow-hidden transform hover:scale-110 transition-all duration-500 hover:rotate-5">
-                <img
-                  src={profileImg}
-                  alt="Malitha Gunathilaka"
-                  className="w-full h-full object-cover"
-                />
               </div>
             </div>
           </div>
