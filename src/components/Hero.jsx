@@ -127,6 +127,16 @@ export default function Hero() {
                 >
                   Contact Me
                 </a>
+                  
+                  {/* Replace the href with your Google Drive file link */}
+                <a
+                  href="https://drive.google.com/file/d/1oRP9Vp39UYptAVzlqEwQ_RmnMGlHYTv7/view" // Replace YOUR_FILE_ID with your Google Drive file ID
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-6 py-2.5 md:px-8 md:py-3 border-2 border-red-500 bg-red-600 text-white rounded-full hover:bg-red-500 hover:border-red-600 transition-all duration-300 transform hover:scale-105"
+                >
+                  Get My CV
+                </a>
               </div>
 
               {/* Social Media Icons */}

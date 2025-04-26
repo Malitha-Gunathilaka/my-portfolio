@@ -40,14 +40,11 @@ export default function About() {
             </h3>
 
             <p className="text-gray-300 text-lg leading-relaxed">
-              I am a final-year BSc Physical Science ICT undergraduate at the
-              University of Kelaniya with a passion for software development,
-              web/mobile applications, and IoT-based systems.
+            I'm Malitha Gunathilaka — a passionate software developer with a BSc in Physical Science (ICT) from the University of Kelaniya. 
+            <p>I specialize in building impactful digital solutions through web and mobile applications, full-stack systems, and IoT-based innovations. With hands-on experience in React, Node.js, JavaScript, Arduino, and ESP32, I enjoy blending hardware and software to solve real-world problems.</p>
             </p>
             <p className="text-gray-300 text-lg leading-relaxed">
-              I enjoy creating real-world solutions by combining hardware and
-              software technologies. I'm skilled in JavaScript, React, Node.js,
-              and embedded systems like Arduino and ESP32.
+            Whether it's creating seamless user interfaces, crafting robust backends, or integrating smart devices, I’m driven by curiosity, creativity, and the challenge of making tech work beautifully.
             </p>
           </div>
         </div>
