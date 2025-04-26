@@ -105,7 +105,7 @@ export default function Hero() {
               <h1 className="text-4xl md:text-6xl font-bold bg-clip-text text-transparent bg-white">
                 Hi, I'm
               </h1>
-              <h1 className="text-4xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-orange-500">
+              <h1 className="text-4xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-red-600">
                 Malitha Gunathilaka
               </h1>
 
