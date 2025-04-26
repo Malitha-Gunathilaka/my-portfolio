@@ -122,13 +122,15 @@ export default function Hero() {
                   View My Work
                 </a>
                 <a
-                  href="#contact"
+                  href="https://www.coursera.org/learner/malitha-gunathilaka" // Replace with your Coursera profile URL
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="px-6 py-2.5 md:px-8 md:py-3 border-2 border-red-500 text-red-100 rounded-full hover:bg-red-500 hover:text-white transition-all duration-300 transform hover:scale-105"
                 >
-                  Contact Me
+                  View Certificates
                 </a>
-                  
-                  {/* Replace the href with your Google Drive file link */}
+
+                {/* Replace the href with your Google Drive file link */}
                 <a
                   href="https://drive.google.com/file/d/1oRP9Vp39UYptAVzlqEwQ_RmnMGlHYTv7/view" // Replace YOUR_FILE_ID with your Google Drive file ID
                   target="_blank"
