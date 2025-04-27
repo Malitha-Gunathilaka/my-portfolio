@@ -1,12 +1,89 @@
-# React + Vite
+# Personal Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive portfolio website built with React and Tailwind CSS, featuring particle animations, smooth scrolling, and interactive components.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Responsive design that works on all devices
+- Interactive particle background animation
+- Dynamic typewriter effect
+- Smooth scrolling navigation
+- Contact form with EmailJS integration
+- Project showcase with hover effects
+- Skills section with animated icons
+- Dark theme with red accent colors
 
-## Expanding the ESLint configuration
+## 🛠️ Built With
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React.js
+- Tailwind CSS
+- Framer Motion
+- React Particles
+- EmailJS
+- Font Awesome
+- React Icons
+
+## 🏃‍♂️ Running the Project
+
+1. Clone the repository:
+```sh
+git clone https://github.com/your-username/my-portfolio.git
+cd my-portfolio
+```
+
+2. Install dependencies:
+```sh
+npm install
+```
+
+3. Create a `.env` file and add your EmailJS credentials:
+```
+VITE_EMAILJS_SERVICE_ID=your_service_id
+VITE_EMAILJS_TEMPLATE_ID=your_template_id
+VITE_EMAILJS_PUBLIC_KEY=your_public_key
+```
+
+4. Start the development server:
+```sh
+npm run dev
+```
+
+5. Build for production:
+```sh
+npm run build
+```
+
+## 📂 Project Structure
+
+```
+my-portfolio/
+├── public/            # Static assets
+├── src/
+│   ├── assets/       # Images and other media
+│   ├── components/   # React components
+│   ├── App.jsx       # Root component
+│   ├── main.jsx     # Entry point
+│   └── index.css    # Global styles
+└── package.json
+```
+
+## 🎨 Components
+
+- `Navbar`: Responsive navigation bar with smooth scrolling
+- `Hero`: Landing section with particle animation
+- `About`: Personal introduction section
+- `Skills`: Technical skills showcase
+- `Projects`: Portfolio projects gallery
+- `Contact`: Contact form with social links
+- `Footer`: Simple footer component
+
+## 📝 License
+
+This project is open source and available under the MIT License.
+
+## 🤝 Contact
+
+Malitha Gunathilaka
+- LinkedIn: [malithagunathilaka](https://www.linkedin.com/in/malithagunathilaka)
+- GitHub: [Malitha-Gunathilaka](https://github.com/Malitha-Gunathilaka)
+- Email: malithavisada@gmail.com
