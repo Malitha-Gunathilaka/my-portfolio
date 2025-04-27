@@ -7,6 +7,7 @@ import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 
 export default function Contact() {
   const [loading, setLoading] = useState(false); // State to manage loading state
+  const [status, setStatus] = useState(""); // Add this line
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -16,6 +17,7 @@ export default function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
+    setStatus(""); // Clear previous status
 
     try {
       await emailjs.send(
@@ -26,10 +28,10 @@ export default function Contact() {
       );
 
       setFormData({ name: "", email: "", message: "" });
-      alert("Message sent successfully!");
+      setStatus("Message sent successfully!"); // Set success message
     } catch (error) {
       console.error("Email error:", error);
-      alert("Error sending message. Please try again.");
+      setStatus("Failed to send message. Please try again."); // Set error message
     } finally {
       setLoading(false);
     }
@@ -66,7 +68,10 @@ export default function Contact() {
             >
               <div className="flex items-center gap-4">
                 <div className="p-3 bg-red-500/10 rounded-lg group-hover:bg-red-500/20 transition-colors">
-                  <FontAwesomeIcon icon={faWhatsapp} className="text-2xl text-red-500" />
+                  <FontAwesomeIcon
+                    icon={faWhatsapp}
+                    className="text-2xl text-red-500"
+                  />
                 </div>
                 <div>
                   <h3 className="text-gray-200 font-medium">WhatsApp</h3>
@@ -86,7 +91,9 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="text-gray-200 font-medium">Email</h3>
-                  <p className="text-gray-400 text-sm">malithavisada@gmail.com</p>
+                  <p className="text-gray-400 text-sm">
+                    malithavisada@gmail.com
+                  </p>
                 </div>
               </div>
             </a>
@@ -95,11 +102,18 @@ export default function Contact() {
             <div className="p-6 bg-gray-800/30 backdrop-blur-sm rounded-xl border border-gray-700/30">
               <div className="flex items-center gap-4">
                 <div className="p-3 bg-red-500/10 rounded-lg">
-                  <FontAwesomeIcon icon={faLocationDot} className="text-2xl text-red-500" />
+                  <FontAwesomeIcon
+                    icon={faLocationDot}
+                    className="text-2xl text-red-500"
+                  />
                 </div>
                 <div>
                   <h3 className="text-gray-200 font-medium">Location</h3>
-                  <p className="text-gray-400 text-sm">Walallavita, Mathugama,<br />kaluthara, Sri Lanka</p>
+                  <p className="text-gray-400 text-sm">
+                    Walallavita, Mathugama,
+                    <br />
+                    kaluthara, Sri Lanka
+                  </p>
                 </div>
               </div>
             </div>
@@ -128,7 +142,9 @@ export default function Contact() {
           {/* Contact Form */}
           <div className="lg:col-span-2">
             <div className="bg-gray-800/30 backdrop-blur-sm p-8 rounded-xl border border-gray-700/30">
-              <h3 className="text-2xl font-semibold text-gray-200 mb-6">Send Message</h3>
+              <h3 className="text-2xl font-semibold text-gray-200 mb-6">
+                Send Message
+              </h3>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-6">
                   <input
@@ -159,6 +175,20 @@ export default function Contact() {
                   className="w-full p-4 bg-gray-900/50 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-red-500 border border-gray-700/30"
                   required
                 ></textarea>
+
+                {/* Add the status message here */}
+                {status && (
+                  <div
+                    className={`p-4 rounded-lg text-center transition-all duration-300 ${
+                      status.includes("Failed")
+                        ? "bg-red-500/10 text-red-500 border border-red-500/20"
+                        : "bg-green-500/10 text-green-500 border border-green-500/20"
+                    }`}
+                  >
+                    {status}
+                  </div>
+                )}
+
                 <button
                   type="submit"
                   disabled={loading}
