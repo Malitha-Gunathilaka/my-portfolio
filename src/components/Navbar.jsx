@@ -32,7 +32,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-16">
           <motion.h1 
             whileHover={{ scale: 1.1 }}
-            className="text-3xl font-bold text-white cursor-pointer font-['Mansalva']"
+            className="text-3xl font-bold text-white cursor-pointer font-['Mansalva']  hover:text-red-500 transition-colors duration-300"
             onClick={scrollToTop}
           >
             Malitha
